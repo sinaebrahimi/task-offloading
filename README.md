@@ -41,7 +41,7 @@ JTO.m simulates the joint task offloading (JTO) method in the manuscript. This f
 After receiving the parameters, JTO.m executes the disjoint method and returns the outputs as in the following:
 
 	1. Acceptance Ratio
-	2. Radio Transmission latency of all tasks, that is, T_k^{tx}\ \ \forall k
-	3. Propagation latency of all tasks, that is, T_k^{prop}\ \ \forall k
-	4. Execution latency of all tasks, that is, T_k^{exe}\ \ \forall k
+	2. Radio Transmission latency of all tasks, that is, T_k^{tx}  \forall k
+	3. Propagation latency of all tasks, that is, T_k^{prop}  \forall k
+	4. Execution latency of all tasks, that is, T_k^{exe}  \forall k
 
