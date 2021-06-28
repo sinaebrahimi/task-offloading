@@ -19,7 +19,7 @@ Notes on the simulation files**:
 DTO.m simulates the disjoint task offloading (DTO) method in the manuscript. This file receives the following parameters as its inputs:
 
 	1. Number of single-antenna users, which is equal to the number of tasks, that is, K
-	2. Maximum acceptable latency of tasks, that is, T=T_k,\ \ \forall k
+	2. Maximum acceptable latency of tasks, that is, <img src="https://render.githubusercontent.com/render/math?math=T=T_k,\ \ \forall k">
 	3. Ratio of RAN latency to the maximum acceptable latency, that is, T_{RAN}/T
 	4. Computational load of each task, that is, L=L_k,\ \ \forall k
 	5. Data size of each task, that is, D=D_k,\ \ \forall k.
