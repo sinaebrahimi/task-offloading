@@ -13,6 +13,13 @@ https://www.researchgate.net/publication/337654553_Energy-Efficient_Task_Offload
 
 In this paper, we propose a novel resource management scheme that jointly allocates the transmit power and computational resources in a centralized radio access network architecture. The network comprises a set of computing nodes to which the requested tasks of different users are offloaded. The optimization problem minimizes the energy consumption of task offloading while takes the end-to-end-latency, i.e., the transmission, execution, and propagation latencies of each task, into account. We aim to allocate the transmit power and computational resources such that the maximum acceptable latency of each task is satisfied. Since the optimization problem is non-convex, we divide it into two sub-problems, one for transmit power allocation and another for task placement and computational resource allocation. Transmit power is allocated via the convex-concave procedure. In addition, a heuristic algorithm is proposed to jointly manage computational resources and task placement. We also propose a feasibility analysis that finds a feasible subset of tasks. Furthermore, a disjoint method that separately allocates the transmit power and the computational resources is proposed as the baseline of comparison. A lower bound on the optimal solution of the optimization problem is also derived based on exhaustive search over task placement decisions and utilizing Karush–Kuhn–Tucker conditions. Simulation results show that the joint method outperforms the disjoint method in terms of acceptance ratio. Simulations also show that the optimality gap of the joint method is less than 5%.
 
+**A typical task offloading example**:
+![A typical task offloading example](https://github.com/sinaebrahimi/task-offloading/blob/main/Figures/1a.%20A%20typical%20task%20offloading%20example.png)
+
+**System model**:
+![System model](https://github.com/sinaebrahimi/task-offloading/blob/main/Figures/1b.%20System%20model.png)
+
+
 **Usage Guide**:
 **
 Notes on the simulation files**:
@@ -45,3 +52,5 @@ After receiving the parameters, JTO.m executes the disjoint method and returns t
 	3. Propagation latency of all tasks, that is, T_k^{prop}  \forall k
 	4. Execution latency of all tasks, that is, T_k^{exe}  \forall k
 
+
+Disclaimer: We used the MOSEK solver and CVX package to solve all problems. Moreover, all simulation steps (including initialization, admission control mechanisms, and solving ILP problems with MOSEK toolbox) have been implemented in MATLAB software which is widely used to solve resource allocation problems.
