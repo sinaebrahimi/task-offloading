@@ -19,12 +19,29 @@ Notes on the simulation files**:
 DTO.m simulates the disjoint task offloading (DTO) method in the manuscript. This file receives the following parameters as its inputs:
 
 	1. Number of single-antenna users, which is equal to the number of tasks, that is, K
-	2. Maximum acceptable latency of tasks, that is, $T=T_k,\ \ \forall k$
+	2. Maximum acceptable latency of tasks, that is, T=T_k, \forall k
 	3. Ratio of RAN latency to the maximum acceptable latency, that is, T_{RAN}/T
-	4. Computational load of each task, that is, L=L_k,\ \ \forall k
-	5. Data size of each task, that is, D=D_k,\ \ \forall k.
+	4. Computational load of each task, that is, L=L_k, \forall k
+	5. Data size of each task, that is, D=D_k,  \forall k.
 
 After receiving the parameters, DTO.m executes the disjoint method and returns the outputs as in the following:
 
+	1. Acceptance Ratio
+	2. Radio Transmission latency of all tasks, that is, T_k^{tx}  \forall k
+	3. Propagation latency of all tasks, that is, T_k^{prop}  \forall k
+	4. Execution latency of all tasks, that is, T_k^{exe}  \forall k
 
+JTO.m simulates the joint task offloading (JTO) method in the manuscript. This file receives the following parameters as its inputs:
+
+	1. Number of single-antenna users, which is equal to the number of tasks.
+	2. Maximum acceptable latency of tasks, that is, T=T_k,  \forall k
+	3. Computational load of each task, that is, L=L_k,  \forall k
+	4. Data size of each task, that is, D=D_k,  \forall k.
+
+After receiving the parameters, JTO.m executes the disjoint method and returns the outputs as in the following:
+
+	1. Acceptance Ratio
+	2. Radio Transmission latency of all tasks, that is, T_k^{tx}\ \ \forall k
+	3. Propagation latency of all tasks, that is, T_k^{prop}\ \ \forall k
+	4. Execution latency of all tasks, that is, T_k^{exe}\ \ \forall k
 
