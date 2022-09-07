@@ -74,11 +74,11 @@ After receiving the parameters, _JTO.m_ executes the disjoint method and returns
 
 It is worth mentioning that the rest of the files function as follows:
 
-	- _**pathbetweennodes.m**_ includes a function that returns all the paths between two nodes of a graph (Copyright 2014 Kelly Kearney). It is used multiple times in both _JTO.m_ and _DTO.m_.
-	- _**channel.mat**_ is a file used for initializing the channel in _DTO.m_.
-	- _**2021-06-22-TaskOffloading (+Complexity Analysis)-arXiv_v3.pdf**_: the complete version of the paper (with complexity analysis) submitted in arXiv.
-	- _**2021-06-23-TaskOffloading- Submitted Version to IEEE TCOM.pdf**_: the version of the paper submitted to the IEEE TCOM (also available on researchgate).
-	- _**Figures**_: This directory includes all the figures (in PNG format) in the paper.
+	- **pathbetweennodes.m** includes a function that returns all the paths between two nodes of a graph (Copyright 2014 Kelly Kearney). It is used multiple times in both _JTO.m_ and _DTO.m_.
+	- **channel.mat** is a file used for initializing the channel in _DTO.m_.
+	- **2021-06-22-TaskOffloading (+Complexity Analysis)-arXiv_v3.pdf**: the complete version of the paper (with complexity analysis) submitted in arXiv.
+	- **2021-06-23-TaskOffloading- Submitted Version to IEEE TCOM.pdf**: the version of the paper submitted to the IEEE TCOM (also available on researchgate).
+	- **Figures**: This directory includes all the figures (in PNG format) in the paper.
 
 
 Disclaimer: We used the MOSEK solver and CVX package to solve all problems. Moreover, all simulation steps (including initialization, admission control mechanisms, and solving ILP problems with MOSEK toolbox) have been implemented in MATLAB software which is widely used to solve resource allocation problems.
