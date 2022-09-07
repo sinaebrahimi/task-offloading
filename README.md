@@ -38,10 +38,9 @@ In this paper, we propose a novel resource management scheme that jointly alloca
 
 
 **Usage Guide**:
-**
-Notes on the simulation files**:
+**Notes on the simulation files**:
 
-_DTO.m_ simulates the disjoint task offloading (DTO) method in the manuscript. This file receives the following parameters as its inputs:
+_DTO.m_ simulates the **disjoint task offloading (DTO)** method in the manuscript. This file receives the following parameters as its **inputs**:
 
 	1. Number of single-antenna users, which is equal to the number of tasks, that is, K
 	2. Maximum acceptable latency of tasks, that is, T=T_k, \forall k
@@ -49,26 +48,27 @@ _DTO.m_ simulates the disjoint task offloading (DTO) method in the manuscript. T
 	4. Computational load of each task, that is, L=L_k, \forall k
 	5. Data size of each task, that is, D=D_k,  \forall k.
 
-After receiving the parameters, _DTO.m_ executes the disjoint method and returns the outputs as in the following:
+After receiving the parameters, _DTO.m_ **executes** the disjoint method and returns the outputs as in the following:
 
 	1. Acceptance Ratio
 	2. Radio Transmission latency of all tasks, that is, T_k^{tx}  \forall k
 	3. Propagation latency of all tasks, that is, T_k^{prop}  \forall k
 	4. Execution latency of all tasks, that is, T_k^{exe}  \forall k
 
-_JTO.m_ simulates the joint task offloading (JTO) method in the manuscript. This file receives the following parameters as its inputs:
+_JTO.m_ simulates the **joint task offloading (JTO)** method in the manuscript. This file receives the following parameters as its **inputs**:
 
 	1. Number of single-antenna users, which is equal to the number of tasks.
 	2. Maximum acceptable latency of tasks, that is, T=T_k,  \forall k
 	3. Computational load of each task, that is, L=L_k,  \forall k
 	4. Data size of each task, that is, D=D_k,  \forall k.
 
-After receiving the parameters, _JTO.m_ executes the disjoint method and returns the outputs as in the following:
+After receiving the parameters, _JTO.m_ **executes** the disjoint method and returns the outputs as in the following:
 
 	1. Acceptance Ratio
 	2. Radio Transmission latency of all tasks, that is, T_k^{tx}  \forall k
 	3. Propagation latency of all tasks, that is, T_k^{prop}  \forall k
 	4. Execution latency of all tasks, that is, T_k^{exe}  \forall k
+
 
 
 
@@ -81,4 +81,4 @@ It is worth mentioning that the rest of the files function as follows:
 	- Figures: This directory includes all the figures (in PNG format) in the paper.
 
 
-Disclaimer: We used the MOSEK solver and CVX package to solve all problems. Moreover, all simulation steps (including initialization, admission control mechanisms, and solving ILP problems with MOSEK toolbox) have been implemented in MATLAB software which is widely used to solve resource allocation problems.
+**Disclaimer**: We used the MOSEK solver and CVX package to solve all problems. Moreover, all simulation steps (including initialization, admission control mechanisms, and solving ILP problems with MOSEK toolbox) have been implemented in MATLAB software which is widely used to solve resource allocation problems.
