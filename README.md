@@ -23,7 +23,9 @@ https://doi.org/10.21227/w5tv-yz53
 
 In this paper, we propose a novel resource management scheme that jointly allocates the transmit power and computational resources in a centralized radio access network architecture. The network comprises a set of computing nodes to which the requested tasks of different users are offloaded. The optimization problem minimizes the energy consumption of task offloading while takes the end-to-end-latency, i.e., the transmission, execution, and propagation latencies of each task, into account. We aim to allocate the transmit power and computational resources such that the maximum acceptable latency of each task is satisfied. Since the optimization problem is non-convex, we divide it into two sub-problems, one for transmit power allocation and another for task placement and computational resource allocation. Transmit power is allocated via the convex-concave procedure. In addition, a heuristic algorithm is proposed to jointly manage computational resources and task placement. We also propose a feasibility analysis that finds a feasible subset of tasks. Furthermore, a disjoint method that separately allocates the transmit power and the computational resources is proposed as the baseline of comparison. A lower bound on the optimal solution of the optimization problem is also derived based on exhaustive search over task placement decisions and utilizing Karush–Kuhn–Tucker conditions. Simulation results show that the joint method outperforms the disjoint method in terms of acceptance ratio. Simulations also show that the optimality gap of the joint method is less than 5%.
 
+
 **Published in**: IEEE Transactions on Communications ( Volume: 70, Issue: 3, March 2022)
+
 **Date of Publication**: 06 December 2021
 
 
@@ -71,6 +73,7 @@ After receiving the parameters, _JTO.m_ executes the disjoint method and returns
 
 
 It is worth mentioning that the rest of the files function as follows:
+
 	- _**pathbetweennodes.m**_ includes a function that returns all the paths between two nodes of a graph (Copyright 2014 Kelly Kearney). It is used multiple times in both _JTO.m_ and _DTO.m_.
 	- _**channel.mat**_ is a file used for initializing the channel in _DTO.m_.
 	- _**2021-06-22-TaskOffloading (+Complexity Analysis)-arXiv_v3.pdf**_: the complete version of the paper (with complexity analysis) submitted in arXiv.
