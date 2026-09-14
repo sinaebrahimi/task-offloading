@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article below."
+title: "Energy-Efficient Task Offloading Under E2E Latency Constraints (code)"
+authors:
+  - family-names: Tajallifar
+    given-names: Mohsen
+  - family-names: Ebrahimi
+    given-names: Sina
+  - family-names: Javan
+    given-names: Mohammad Reza
+  - family-names: Mokari
+    given-names: Nader
+  - family-names: Chiaraviglio
+    given-names: Luca
+date-released: 2022-03-01
+license: GPL-3.0
+preferred-citation:
+  type: article
+  title: "Energy-Efficient Task Offloading Under E2E Latency Constraints"
+  authors:
+    - family-names: Tajallifar
+      given-names: Mohsen
+    - family-names: Ebrahimi
+      given-names: Sina
+    - family-names: Javan
+      given-names: Mohammad Reza
+    - family-names: Mokari
+      given-names: Nader
+    - family-names: Chiaraviglio
+      given-names: Luca
+  journal: "IEEE Transactions on Communications"
+  volume: 70
+  issue: 3
+  start: 1711
+  end: 1725
+  year: 2022
+  doi: "10.1109/TCOMM.2021.3132909"
